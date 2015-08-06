@@ -1,0 +1,1577 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnitTestWithNinject.1.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver">
+            <summary>Shim type of UnitTestWithNinject.App_Start.NinjectDependencyResolver</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.#ctor(UnitTestWithNinject.App_Start.NinjectDependencyResolver)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.Bind(System.Web.Http.Dependencies.IDependencyResolver)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.Bind(System.Web.Http.Dependencies.IDependencyScope)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.BeginScope">
+            <summary>Sets the shim of NinjectDependencyResolver.BeginScope()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.ConstructorIKernel">
+            <summary>Sets the shim of NinjectDependencyResolver.NinjectDependencyResolver(IKernel kernel)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyResolver.AllInstances.BeginScope">
+            <summary>Sets the shim of NinjectDependencyResolver.BeginScope()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope">
+            <summary>Shim type of UnitTestWithNinject.App_Start.NinjectDependencyScope</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.#ctor(UnitTestWithNinject.App_Start.NinjectDependencyScope)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.Bind(System.Web.Http.Dependencies.IDependencyScope)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.ConstructorIResolutionRoot">
+            <summary>Sets the shim of NinjectDependencyScope.NinjectDependencyScope(IResolutionRoot resolver)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.Dispose">
+            <summary>Sets the shim of NinjectDependencyScope.Dispose()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.GetServiceType">
+            <summary>Sets the shim of NinjectDependencyScope.GetService(Type serviceType)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.GetServicesType">
+            <summary>Sets the shim of NinjectDependencyScope.GetServices(Type serviceType)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.AllInstances.Dispose">
+            <summary>Sets the shim of NinjectDependencyScope.Dispose()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.AllInstances.GetServiceType">
+            <summary>Sets the shim of NinjectDependencyScope.GetService(Type serviceType)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectDependencyScope.AllInstances.GetServicesType">
+            <summary>Sets the shim of NinjectDependencyScope.GetServices(Type serviceType)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon">
+            <summary>Shim type of UnitTestWithNinject.App_Start.NinjectWebCommon</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.CreateKernel">
+            <summary>Sets the shim of NinjectWebCommon.CreateKernel()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.RegisterServicesIKernel">
+            <summary>Sets the shim of NinjectWebCommon.RegisterServices(IKernel kernel)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.Start">
+            <summary>Sets the shim of NinjectWebCommon.Start()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.StaticConstructor">
+            <summary>Sets the shim of NinjectWebCommon.NinjectWebCommon()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon.Stop">
+            <summary>Sets the shim of NinjectWebCommon.Stop()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon._CreateKernelb__0IContext">
+            <summary>Sets the shim of NinjectWebCommon.&lt;CreateKernel&gt;b__0(IContext ctx)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.ShimNinjectWebCommon._CreateKernelb__1">
+            <summary>Sets the shim of NinjectWebCommon.&lt;CreateKernel&gt;b__1()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver">
+            <summary>Stub type of UnitTestWithNinject.App_Start.NinjectDependencyResolver</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver.#ctor(Ninject.IKernel)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver.InitializeStub">
+            <summary>Initializes a new instance of type StubNinjectDependencyResolver</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyResolver.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope">
+            <summary>Stub type of UnitTestWithNinject.App_Start.NinjectDependencyScope</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope.#ctor(Ninject.Syntax.IResolutionRoot)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope.InitializeStub">
+            <summary>Initializes a new instance of type StubNinjectDependencyScope</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.App_Start.Fakes.StubNinjectDependencyScope.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.ShimHomeController">
+            <summary>Shim type of UnitTestWithNinject.Controllers.HomeController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.#ctor(UnitTestWithNinject.Controllers.HomeController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IActionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IAuthorizationFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IExceptionFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.IResultFilter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.Async.IAsyncController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.Web.Mvc.Async.IAsyncManagerContainer)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Constructor">
+            <summary>Sets the shim of HomeController.HomeController()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.Index">
+            <summary>Sets the shim of HomeController.Index()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimHomeController.AllInstances.Index">
+            <summary>Sets the shim of HomeController.Index()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.ShimUnitController">
+            <summary>Shim type of UnitTestWithNinject.Controllers.UnitController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.#ctor(UnitTestWithNinject.Controllers.UnitController)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.Bind(System.Web.Http.Controllers.IHttpController)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.ConstructorIUnitRepository">
+            <summary>Sets the shim of UnitController.UnitController(IUnitRepository repo)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.DeleteInt32">
+            <summary>Sets the shim of UnitController.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.Get">
+            <summary>Sets the shim of UnitController.Get()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.GetInt32">
+            <summary>Sets the shim of UnitController.Get(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.GetUnitsByAddressString">
+            <summary>Sets the shim of UnitController.GetUnitsByAddress(String address)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.PostString">
+            <summary>Sets the shim of UnitController.Post(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.PutInt32String">
+            <summary>Sets the shim of UnitController.Put(Int32 id, String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.DeleteInt32">
+            <summary>Sets the shim of UnitController.Delete(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.Get">
+            <summary>Sets the shim of UnitController.Get()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.GetInt32">
+            <summary>Sets the shim of UnitController.Get(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.GetUnitsByAddressString">
+            <summary>Sets the shim of UnitController.GetUnitsByAddress(String address)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.PostString">
+            <summary>Sets the shim of UnitController.Post(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.ShimUnitController.AllInstances.PutInt32String">
+            <summary>Sets the shim of UnitController.Put(Int32 id, String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.StubHomeController">
+            <summary>Stub type of UnitTestWithNinject.Controllers.HomeController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.BeginExecute(System.Web.Routing.RequestContext,System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.BeginExecuteCore(System.AsyncCallback,System.Object)">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.BeginExecuteCoreAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecuteCore(AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.BeginExecuteRequestContextAsyncCallbackObject">
+            <summary>Sets the stub of Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Content(System.String,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ContentStringStringEncoding">
+            <summary>Sets the stub of Controller.Content(String content, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.CreateActionInvoker">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.CreateActionInvoker01">
+            <summary>Sets the stub of Controller.CreateActionInvoker()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.CreateTempDataProvider">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.CreateTempDataProvider01">
+            <summary>Sets the stub of Controller.CreateTempDataProvider()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.DisableAsyncSupportGet">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Dispose(System.Boolean)">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.DisposeBoolean">
+            <summary>Sets the stub of Controller.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.EndExecute(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.EndExecuteCore(System.IAsyncResult)">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.EndExecuteCoreIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecuteCore(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.EndExecuteIAsyncResult">
+            <summary>Sets the stub of Controller.EndExecute(IAsyncResult asyncResult)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Execute(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ExecuteCore">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ExecuteCore01">
+            <summary>Sets the stub of Controller.ExecuteCore()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ExecuteRequestContext">
+            <summary>Sets the stub of ControllerBase.Execute(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.File(System.Byte[],System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.File(System.String,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.File(System.IO.Stream,System.String,System.String)">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.FileByteArrayStringString">
+            <summary>Sets the stub of Controller.File(Byte[] fileContents, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.FileStreamStringString">
+            <summary>Sets the stub of Controller.File(Stream fileStream, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.FileStringStringString">
+            <summary>Sets the stub of Controller.File(String fileName, String contentType, String fileDownloadName)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.HandleUnknownAction(System.String)">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.HandleUnknownActionString">
+            <summary>Sets the stub of Controller.HandleUnknownAction(String actionName)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.HttpNotFound(System.String)">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.HttpNotFoundString">
+            <summary>Sets the stub of Controller.HttpNotFound(String statusDescription)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Initialize(System.Web.Routing.RequestContext)">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.InitializeRequestContext">
+            <summary>Sets the stub of Controller.Initialize(RequestContext requestContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.InitializeStub">
+            <summary>Initializes a new instance of type StubHomeController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.JavaScript(System.String)">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.JavaScriptString">
+            <summary>Sets the stub of Controller.JavaScript(String script)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Json(System.Object,System.String,System.Text.Encoding)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Json(System.Object,System.String,System.Text.Encoding,System.Web.Mvc.JsonRequestBehavior)">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.JsonObjectStringEncoding">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.JsonObjectStringEncodingJsonRequestBehavior">
+            <summary>Sets the stub of Controller.Json(Object data, String contentType, Encoding contentEncoding, JsonRequestBehavior behavior)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnActionExecuted(System.Web.Mvc.ActionExecutedContext)">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnActionExecutedActionExecutedContext">
+            <summary>Sets the stub of Controller.OnActionExecuted(ActionExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnActionExecutingActionExecutingContext">
+            <summary>Sets the stub of Controller.OnActionExecuting(ActionExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnAuthorization(System.Web.Mvc.AuthorizationContext)">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnAuthorizationAuthorizationContext">
+            <summary>Sets the stub of Controller.OnAuthorization(AuthorizationContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnException(System.Web.Mvc.ExceptionContext)">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnExceptionExceptionContext">
+            <summary>Sets the stub of Controller.OnException(ExceptionContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnResultExecuted(System.Web.Mvc.ResultExecutedContext)">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnResultExecutedResultExecutedContext">
+            <summary>Sets the stub of Controller.OnResultExecuted(ResultExecutedContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnResultExecuting(System.Web.Mvc.ResultExecutingContext)">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.OnResultExecutingResultExecutingContext">
+            <summary>Sets the stub of Controller.OnResultExecuting(ResultExecutingContext filterContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.PartialView(System.String,System.Object)">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.PartialViewStringObject">
+            <summary>Sets the stub of Controller.PartialView(String viewName, Object model)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.Redirect(System.String)">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectPermanent(System.String)">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectPermanentString">
+            <summary>Sets the stub of Controller.RedirectPermanent(String url)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectString">
+            <summary>Sets the stub of Controller.Redirect(String url)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToAction(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToActionPermanent(System.String,System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToActionPermanentStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToActionPermanent(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToActionStringStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToAction(String actionName, String controllerName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToRoute(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToRoutePermanent(System.String,System.Web.Routing.RouteValueDictionary)">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToRoutePermanentStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoutePermanent(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.RedirectToRouteStringRouteValueDictionary">
+            <summary>Sets the stub of Controller.RedirectToRoute(String routeName, RouteValueDictionary routeValues)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.View(System.Web.Mvc.IView,System.Object)">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubHomeController.View(System.String,System.String,System.Object)">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ViewIViewObject">
+            <summary>Sets the stub of Controller.View(IView view, Object model)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubHomeController.ViewStringStringObject">
+            <summary>Sets the stub of Controller.View(String viewName, String masterName, Object model)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubHomeController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubHomeController.DisableAsyncSupport">
+            <summary>Sets the stub of Controller.get_DisableAsyncSupport()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubHomeController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubHomeController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Controllers.Fakes.StubUnitController">
+            <summary>Stub type of UnitTestWithNinject.Controllers.UnitController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.#ctor(UnitTestWithNinject.IUnitRepository)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequest(System.String)">
+            <summary>Sets the stub of ApiController.BadRequest(String message)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequest">
+            <summary>Sets the stub of ApiController.BadRequest()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequest(System.Web.Http.ModelBinding.ModelStateDictionary)">
+            <summary>Sets the stub of ApiController.BadRequest(ModelStateDictionary modelState)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequest01">
+            <summary>Sets the stub of ApiController.BadRequest()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequestModelStateDictionary">
+            <summary>Sets the stub of ApiController.BadRequest(ModelStateDictionary modelState)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.BadRequestString">
+            <summary>Sets the stub of ApiController.BadRequest(String message)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Conflict">
+            <summary>Sets the stub of ApiController.Conflict()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Conflict01">
+            <summary>Sets the stub of ApiController.Conflict()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Content``1(System.Net.HttpStatusCode,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue)">
+            <summary>Sets the stub of ApiController.Content(HttpStatusCode statusCode, !!0 value, MediaTypeFormatter formatter, MediaTypeHeaderValue mediaType)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Content``1(System.Net.HttpStatusCode,``0)">
+            <summary>Sets the stub of ApiController.Content(HttpStatusCode statusCode, !!0 value)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ContentOf1HttpStatusCodeM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Net.HttpStatusCode,``0,System.Web.Http.Results.NegotiatedContentResult{``0}})">
+            <summary>Sets stubs of Content(HttpStatusCode statusCode, !!0 value)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ContentOf1HttpStatusCodeM0MediaTypeFormatterMediaTypeHeaderValue``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Net.HttpStatusCode,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,System.Web.Http.Results.FormattedContentResult{``0}})">
+            <summary>Sets stubs of Content(HttpStatusCode statusCode, !!0 value, MediaTypeFormatter formatter, MediaTypeHeaderValue mediaType)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Created``1(System.Uri,``0)">
+            <summary>Sets the stub of ApiController.Created(Uri location, !!0 content)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.CreatedAtRoute``1(System.String,System.Collections.Generic.IDictionary{System.String,System.Object},``0)">
+            <summary>Sets the stub of ApiController.CreatedAtRoute(String routeName, IDictionary`2&lt;String,Object&gt; routeValues, !!0 content)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.CreatedAtRouteOf1StringIDictionaryOfStringObjectM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,System.Collections.Generic.IDictionary{System.String,System.Object},``0,System.Web.Http.Results.CreatedAtRouteNegotiatedContentResult{``0}})">
+            <summary>Sets stubs of CreatedAtRoute(String routeName, IDictionary`2&lt;String,Object&gt; routeValues, !!0 content)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.CreatedOf1UriM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Uri,``0,System.Web.Http.Results.CreatedNegotiatedContentResult{``0}})">
+            <summary>Sets stubs of Created(Uri location, !!0 content)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Dispose(System.Boolean)">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.DisposeBoolean">
+            <summary>Sets the stub of ApiController.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ExecuteAsync(System.Web.Http.Controllers.HttpControllerContext,System.Threading.CancellationToken)">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ExecuteAsyncHttpControllerContextCancellationToken">
+            <summary>Sets the stub of ApiController.ExecuteAsync(HttpControllerContext controllerContext, CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Initialize(System.Web.Http.Controllers.HttpControllerContext)">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InitializeHttpControllerContext">
+            <summary>Sets the stub of ApiController.Initialize(HttpControllerContext controllerContext)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InitializeStub">
+            <summary>Initializes a new instance of type StubUnitController</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InternalServerError(System.Exception)">
+            <summary>Sets the stub of ApiController.InternalServerError(Exception exception)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InternalServerError">
+            <summary>Sets the stub of ApiController.InternalServerError()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InternalServerError01">
+            <summary>Sets the stub of ApiController.InternalServerError()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InternalServerErrorException">
+            <summary>Sets the stub of ApiController.InternalServerError(Exception exception)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Json``1(``0,Newtonsoft.Json.JsonSerializerSettings,System.Text.Encoding)">
+            <summary>Sets the stub of ApiController.Json(!!0 content, JsonSerializerSettings serializerSettings, Encoding encoding)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.JsonOf1M0JsonSerializerSettingsEncoding``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,Newtonsoft.Json.JsonSerializerSettings,System.Text.Encoding,System.Web.Http.Results.JsonResult{``0}})">
+            <summary>Sets stubs of Json(!!0 content, JsonSerializerSettings serializerSettings, Encoding encoding)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.NotFound">
+            <summary>Sets the stub of ApiController.NotFound()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.NotFound01">
+            <summary>Sets the stub of ApiController.NotFound()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Ok">
+            <summary>Sets the stub of ApiController.Ok()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Ok``1(``0)">
+            <summary>Sets the stub of ApiController.Ok(!!0 content)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Ok01">
+            <summary>Sets the stub of ApiController.Ok()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.OkOf1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Web.Http.Results.OkNegotiatedContentResult{``0}})">
+            <summary>Sets stubs of Ok(!!0 content)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Redirect(System.Uri)">
+            <summary>Sets the stub of ApiController.Redirect(Uri location)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Redirect(System.String)">
+            <summary>Sets the stub of ApiController.Redirect(String location)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.RedirectString">
+            <summary>Sets the stub of ApiController.Redirect(String location)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.RedirectToRoute(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>Sets the stub of ApiController.RedirectToRoute(String routeName, IDictionary`2&lt;String,Object&gt; routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.RedirectToRouteStringIDictionaryOfStringObject">
+            <summary>Sets the stub of ApiController.RedirectToRoute(String routeName, IDictionary`2&lt;String,Object&gt; routeValues)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.RedirectUri">
+            <summary>Sets the stub of ApiController.Redirect(Uri location)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ResponseMessage(System.Net.Http.HttpResponseMessage)">
+            <summary>Sets the stub of ApiController.ResponseMessage(HttpResponseMessage response)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.ResponseMessageHttpResponseMessage">
+            <summary>Sets the stub of ApiController.ResponseMessage(HttpResponseMessage response)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.StatusCode(System.Net.HttpStatusCode)">
+            <summary>Sets the stub of ApiController.StatusCode(HttpStatusCode status)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.StatusCodeHttpStatusCode">
+            <summary>Sets the stub of ApiController.StatusCode(HttpStatusCode status)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Controllers.Fakes.StubUnitController.Unauthorized(System.Collections.Generic.IEnumerable{System.Net.Http.Headers.AuthenticationHeaderValue})">
+            <summary>Sets the stub of ApiController.Unauthorized(IEnumerable`1&lt;AuthenticationHeaderValue&gt; challenges)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Controllers.Fakes.StubUnitController.UnauthorizedIEnumerableOfAuthenticationHeaderValue">
+            <summary>Sets the stub of ApiController.Unauthorized(IEnumerable`1&lt;AuthenticationHeaderValue&gt; challenges)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubUnitController.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Controllers.Fakes.StubUnitController.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimBundleConfig">
+            <summary>Shim type of UnitTestWithNinject.BundleConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimBundleConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimBundleConfig.#ctor(UnitTestWithNinject.BundleConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimBundleConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimBundleConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimBundleConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimBundleConfig.Constructor">
+            <summary>Sets the shim of BundleConfig.BundleConfig()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimBundleConfig.RegisterBundlesBundleCollection">
+            <summary>Sets the shim of BundleConfig.RegisterBundles(BundleCollection bundles)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimBundleConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimFilterConfig">
+            <summary>Shim type of UnitTestWithNinject.FilterConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimFilterConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimFilterConfig.#ctor(UnitTestWithNinject.FilterConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimFilterConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimFilterConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimFilterConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimFilterConfig.Constructor">
+            <summary>Sets the shim of FilterConfig.FilterConfig()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimFilterConfig.RegisterGlobalFiltersGlobalFilterCollection">
+            <summary>Sets the shim of FilterConfig.RegisterGlobalFilters(GlobalFilterCollection filters)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimFilterConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimRouteConfig">
+            <summary>Shim type of UnitTestWithNinject.RouteConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimRouteConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimRouteConfig.#ctor(UnitTestWithNinject.RouteConfig)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimRouteConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimRouteConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimRouteConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimRouteConfig.Constructor">
+            <summary>Sets the shim of RouteConfig.RouteConfig()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimRouteConfig.RegisterRoutesRouteCollection">
+            <summary>Sets the shim of RouteConfig.RegisterRoutes(RouteCollection routes)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimRouteConfig.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimUnitRepository">
+            <summary>Shim type of UnitTestWithNinject.UnitRepository</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimUnitRepository.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimUnitRepository.#ctor(UnitTestWithNinject.UnitRepository)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimUnitRepository.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimUnitRepository.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimUnitRepository.Bind(UnitTestWithNinject.IUnitRepository)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.Constructor">
+            <summary>Sets the shim of UnitRepository.UnitRepository()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.GetByIdInt32">
+            <summary>Sets the shim of UnitRepository.GetById(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.GetUnits">
+            <summary>Sets the shim of UnitRepository.GetUnits()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimUnitRepository.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.AllInstances.GetByIdInt32">
+            <summary>Sets the shim of UnitRepository.GetById(Int32 id)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimUnitRepository.AllInstances.GetUnits">
+            <summary>Sets the shim of UnitRepository.GetUnits()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimWebApiApplication">
+            <summary>Shim type of UnitTestWithNinject.WebApiApplication</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.#ctor(UnitTestWithNinject.WebApiApplication)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.Bind(System.Web.IHttpAsyncHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.Bind(System.Web.IHttpHandler)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiApplication.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiApplication.Application_Start">
+            <summary>Sets the shim of WebApiApplication.Application_Start()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiApplication.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiApplication.Constructor">
+            <summary>Sets the shim of WebApiApplication.WebApiApplication()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimWebApiApplication.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiApplication.AllInstances.Application_Start">
+            <summary>Sets the shim of WebApiApplication.Application_Start()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.ShimWebApiConfig">
+            <summary>Shim type of UnitTestWithNinject.WebApiConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiConfig.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiConfig.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.ShimWebApiConfig.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiConfig.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.ShimWebApiConfig.RegisterHttpConfiguration">
+            <summary>Sets the shim of WebApiConfig.Register(HttpConfiguration config)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubBundleConfig">
+            <summary>Stub type of UnitTestWithNinject.BundleConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubBundleConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubBundleConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubBundleConfig</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubBundleConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubBundleConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubBundleConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubFilterConfig">
+            <summary>Stub type of UnitTestWithNinject.FilterConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubFilterConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubFilterConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubFilterConfig</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubFilterConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubFilterConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubFilterConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubIUnitRepository">
+            <summary>Stub type of UnitTestWithNinject.IUnitRepository</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubIUnitRepository.#ctor">
+            <summary>Initializes a new instance of type StubIUnitRepository</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubIUnitRepository.GetByIdInt32">
+            <summary>Sets the stub of IUnitRepository.GetById(Int32 id)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubIUnitRepository.GetUnits">
+            <summary>Sets the stub of IUnitRepository.GetUnits()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubIUnitRepository.utwn::UnitTestWithNinject#IUnitRepository#GetById(System.Int32)">
+            <summary>Sets the stub of IUnitRepository.GetById(Int32 id)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubIUnitRepository.utwn::UnitTestWithNinject#IUnitRepository#GetUnits">
+            <summary>Sets the stub of IUnitRepository.GetUnits()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubIrepo">
+            <summary>Stub type of UnitTestWithNinject.Irepo</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubIrepo.#ctor">
+            <summary>Initializes a new instance of type StubIrepo</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubIrepo.GetPlop">
+            <summary>Sets the stub of Irepo.getPlop()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubIrepo.utwn::UnitTestWithNinject#Irepo#getPlop">
+            <summary>Sets the stub of Irepo.getPlop()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubRouteConfig">
+            <summary>Stub type of UnitTestWithNinject.RouteConfig</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubRouteConfig.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubRouteConfig.InitializeStub">
+            <summary>Initializes a new instance of type StubRouteConfig</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubRouteConfig.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubRouteConfig.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubRouteConfig.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubUnitRepository">
+            <summary>Stub type of UnitTestWithNinject.UnitRepository</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubUnitRepository.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubUnitRepository.InitializeStub">
+            <summary>Initializes a new instance of type StubUnitRepository</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubUnitRepository.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubUnitRepository.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubUnitRepository.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Fakes.StubWebApiApplication">
+            <summary>Stub type of UnitTestWithNinject.WebApiApplication</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.Dispose">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubWebApiApplication.Dispose01">
+            <summary>Sets the stub of HttpApplication.Dispose()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.GetOutputCacheProviderName(System.Web.HttpContext)">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubWebApiApplication.GetOutputCacheProviderNameHttpContext">
+            <summary>Sets the stub of HttpApplication.GetOutputCacheProviderName(HttpContext context)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.GetVaryByCustomString(System.Web.HttpContext,System.String)">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubWebApiApplication.GetVaryByCustomStringHttpContextString">
+            <summary>Sets the stub of HttpApplication.GetVaryByCustomString(HttpContext context, String custom)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.Init">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Fakes.StubWebApiApplication.Init01">
+            <summary>Sets the stub of HttpApplication.Init()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Fakes.StubWebApiApplication.InitializeStub">
+            <summary>Initializes a new instance of type StubWebApiApplication</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubWebApiApplication.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubWebApiApplication.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Fakes.StubWebApiApplication.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimLease">
+            <summary>Shim type of UnitTestWithNinject.Models.Lease</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimLease.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimLease.#ctor(UnitTestWithNinject.Models.Lease)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimLease.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimLease.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.Constructor">
+            <summary>Sets the shim of Lease.Lease()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.LeaseIdGet">
+            <summary>Sets the shim of Lease.get_LeaseId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.LeaseIdSetInt32">
+            <summary>Sets the shim of Lease.set_LeaseId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.nameGet">
+            <summary>Sets the shim of Lease.get_name()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.nameSetString">
+            <summary>Sets the shim of Lease.set_name(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.tenantsGet">
+            <summary>Sets the shim of Lease.get_tenants()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.tenantsSetICollectionOftenant">
+            <summary>Sets the shim of Lease.set_tenants(ICollection`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.LeaseIdGet">
+            <summary>Sets the shim of Lease.get_LeaseId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.LeaseIdSetInt32">
+            <summary>Sets the shim of Lease.set_LeaseId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.nameGet">
+            <summary>Sets the shim of Lease.get_name()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.nameSetString">
+            <summary>Sets the shim of Lease.set_name(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.tenantsGet">
+            <summary>Sets the shim of Lease.get_tenants()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimLease.AllInstances.tenantsSetICollectionOftenant">
+            <summary>Sets the shim of Lease.set_tenants(ICollection`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimPGEntities">
+            <summary>Shim type of UnitTestWithNinject.Models.PGEntities</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.#ctor(UnitTestWithNinject.Models.PGEntities)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimPGEntities.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.Constructor">
+            <summary>Sets the shim of PGEntities.PGEntities()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.LeasesGet">
+            <summary>Sets the shim of PGEntities.get_Leases()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.LeasesSetDbSetOfLease">
+            <summary>Sets the shim of PGEntities.set_Leases(DbSet`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of PGEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.UnitsGet">
+            <summary>Sets the shim of PGEntities.get_Units()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.UnitsSetDbSetOfUnit">
+            <summary>Sets the shim of PGEntities.set_Units(DbSet`1&lt;Unit&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.sysdiagramsGet">
+            <summary>Sets the shim of PGEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.sysdiagramsSetDbSetOfsysdiagram">
+            <summary>Sets the shim of PGEntities.set_sysdiagrams(DbSet`1&lt;sysdiagram&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.tenantsGet">
+            <summary>Sets the shim of PGEntities.get_tenants()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.tenantsSetDbSetOftenant">
+            <summary>Sets the shim of PGEntities.set_tenants(DbSet`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.LeasesGet">
+            <summary>Sets the shim of PGEntities.get_Leases()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.LeasesSetDbSetOfLease">
+            <summary>Sets the shim of PGEntities.set_Leases(DbSet`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.OnModelCreatingDbModelBuilder">
+            <summary>Sets the shim of PGEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.UnitsGet">
+            <summary>Sets the shim of PGEntities.get_Units()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.UnitsSetDbSetOfUnit">
+            <summary>Sets the shim of PGEntities.set_Units(DbSet`1&lt;Unit&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.sysdiagramsGet">
+            <summary>Sets the shim of PGEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.sysdiagramsSetDbSetOfsysdiagram">
+            <summary>Sets the shim of PGEntities.set_sysdiagrams(DbSet`1&lt;sysdiagram&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.tenantsGet">
+            <summary>Sets the shim of PGEntities.get_tenants()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimPGEntities.AllInstances.tenantsSetDbSetOftenant">
+            <summary>Sets the shim of PGEntities.set_tenants(DbSet`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimUnit">
+            <summary>Shim type of UnitTestWithNinject.Models.Unit</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimUnit.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimUnit.#ctor(UnitTestWithNinject.Models.Unit)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimUnit.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.ShimUnit.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.Constructor">
+            <summary>Sets the shim of Unit.Unit()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitAddressGet">
+            <summary>Sets the shim of Unit.get_UnitAddress()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitAddressSetString">
+            <summary>Sets the shim of Unit.set_UnitAddress(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitIdGet">
+            <summary>Sets the shim of Unit.get_UnitId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitIdSetInt32">
+            <summary>Sets the shim of Unit.set_UnitId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitNameGet">
+            <summary>Sets the shim of Unit.get_UnitName()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.UnitNameSetString">
+            <summary>Sets the shim of Unit.set_UnitName(String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitAddressGet">
+            <summary>Sets the shim of Unit.get_UnitAddress()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitAddressSetString">
+            <summary>Sets the shim of Unit.set_UnitAddress(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitIdGet">
+            <summary>Sets the shim of Unit.get_UnitId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitIdSetInt32">
+            <summary>Sets the shim of Unit.set_UnitId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitNameGet">
+            <summary>Sets the shim of Unit.get_UnitName()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.ShimUnit.AllInstances.UnitNameSetString">
+            <summary>Sets the shim of Unit.set_UnitName(String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Shimsysdiagram">
+            <summary>Shim type of UnitTestWithNinject.Models.sysdiagram</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.#ctor(UnitTestWithNinject.Models.sysdiagram)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.Constructor">
+            <summary>Sets the shim of sysdiagram.sysdiagram()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.definitionGet">
+            <summary>Sets the shim of sysdiagram.get_definition()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.definitionSetByteArray">
+            <summary>Sets the shim of sysdiagram.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.diagram_idGet">
+            <summary>Sets the shim of sysdiagram.get_diagram_id()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.diagram_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_diagram_id(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.nameGet">
+            <summary>Sets the shim of sysdiagram.get_name()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.nameSetString">
+            <summary>Sets the shim of sysdiagram.set_name(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.principal_idGet">
+            <summary>Sets the shim of sysdiagram.get_principal_id()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.principal_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_principal_id(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.versionGet">
+            <summary>Sets the shim of sysdiagram.get_version()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.versionSetNullableOfInt32">
+            <summary>Sets the shim of sysdiagram.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.definitionGet">
+            <summary>Sets the shim of sysdiagram.get_definition()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.definitionSetByteArray">
+            <summary>Sets the shim of sysdiagram.set_definition(Byte[] value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.diagram_idGet">
+            <summary>Sets the shim of sysdiagram.get_diagram_id()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.diagram_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_diagram_id(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.nameGet">
+            <summary>Sets the shim of sysdiagram.get_name()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.nameSetString">
+            <summary>Sets the shim of sysdiagram.set_name(String value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.principal_idGet">
+            <summary>Sets the shim of sysdiagram.get_principal_id()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.principal_idSetInt32">
+            <summary>Sets the shim of sysdiagram.set_principal_id(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.versionGet">
+            <summary>Sets the shim of sysdiagram.get_version()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimsysdiagram.AllInstances.versionSetNullableOfInt32">
+            <summary>Sets the shim of sysdiagram.set_version(Nullable`1&lt;Int32&gt; value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Shimtenant">
+            <summary>Shim type of UnitTestWithNinject.Models.tenant</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimtenant.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimtenant.#ctor(UnitTestWithNinject.Models.tenant)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimtenant.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Shimtenant.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.Constructor">
+            <summary>Sets the shim of tenant.tenant()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.LeasesGet">
+            <summary>Sets the shim of tenant.get_Leases()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.LeasesSetICollectionOfLease">
+            <summary>Sets the shim of tenant.set_Leases(ICollection`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.tentIdGet">
+            <summary>Sets the shim of tenant.get_tentId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.tentIdSetInt32">
+            <summary>Sets the shim of tenant.set_tentId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.tnameGet">
+            <summary>Sets the shim of tenant.get_tname()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.tnameSetString">
+            <summary>Sets the shim of tenant.set_tname(String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.LeasesGet">
+            <summary>Sets the shim of tenant.get_Leases()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.LeasesSetICollectionOfLease">
+            <summary>Sets the shim of tenant.set_Leases(ICollection`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.tentIdGet">
+            <summary>Sets the shim of tenant.get_tentId()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.tentIdSetInt32">
+            <summary>Sets the shim of tenant.set_tentId(Int32 value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.tnameGet">
+            <summary>Sets the shim of tenant.get_tname()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Shimtenant.AllInstances.tnameSetString">
+            <summary>Sets the shim of tenant.set_tname(String value)</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.StubLease">
+            <summary>Stub type of UnitTestWithNinject.Models.Lease</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubLease.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubLease.AttachBackingFieldTotenants">
+            <summary>Attaches delegates to emulate StubLease.tenants as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubLease.InitializeStub">
+            <summary>Initializes a new instance of type StubLease</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubLease.TenantsGet">
+            <summary>Sets the stub of Lease.get_tenants()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubLease.TenantsSetICollectionOftenant">
+            <summary>Sets the stub of Lease.set_tenants(ICollection`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubLease.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubLease.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubLease.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubLease.tenants">
+            <summary>Sets the stub of Lease.get_tenants()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.StubPGEntities">
+            <summary>Stub type of UnitTestWithNinject.Models.PGEntities</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.AttachBackingFieldToLeases">
+            <summary>Attaches delegates to emulate StubPGEntities.Leases as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.AttachBackingFieldToUnits">
+            <summary>Attaches delegates to emulate StubPGEntities.Units as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.AttachBackingFieldTosysdiagrams">
+            <summary>Attaches delegates to emulate StubPGEntities.sysdiagrams as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.AttachBackingFieldTotenants">
+            <summary>Attaches delegates to emulate StubPGEntities.tenants as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.Dispose(System.Boolean)">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.DisposeBoolean">
+            <summary>Sets the stub of DbContext.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.Equals(System.Object)">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.EqualsObject">
+            <summary>Sets the stub of DbContext.Equals(Object obj)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.GetHashCode">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.GetHashCode01">
+            <summary>Sets the stub of DbContext.GetHashCode()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.InitializeStub">
+            <summary>Initializes a new instance of type StubPGEntities</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.LeasesGet">
+            <summary>Sets the stub of PGEntities.get_Leases()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.LeasesSetDbSetOfLease">
+            <summary>Sets the stub of PGEntities.set_Leases(DbSet`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>Sets the stub of PGEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.OnModelCreatingDbModelBuilder">
+            <summary>Sets the stub of PGEntities.OnModelCreating(DbModelBuilder modelBuilder)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChanges">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChanges01">
+            <summary>Sets the stub of DbContext.SaveChanges()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChangesAsync">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChangesAsync(System.Threading.CancellationToken)">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChangesAsync01">
+            <summary>Sets the stub of DbContext.SaveChangesAsync()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SaveChangesAsyncCancellationToken">
+            <summary>Sets the stub of DbContext.SaveChangesAsync(CancellationToken cancellationToken)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.Set(System.Type)">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.Set``1">
+            <summary>Sets the stub of DbContext.Set()</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>Sets stubs of Set()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SetType">
+            <summary>Sets the stub of DbContext.Set(Type entityType)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.ShouldValidateEntityDbEntityEntry">
+            <summary>Sets the stub of DbContext.ShouldValidateEntity(DbEntityEntry entityEntry)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SysdiagramsGet">
+            <summary>Sets the stub of PGEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.SysdiagramsSetDbSetOfsysdiagram">
+            <summary>Sets the stub of PGEntities.set_sysdiagrams(DbSet`1&lt;sysdiagram&gt; value)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.TenantsGet">
+            <summary>Sets the stub of PGEntities.get_tenants()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.TenantsSetDbSetOftenant">
+            <summary>Sets the stub of PGEntities.set_tenants(DbSet`1&lt;tenant&gt; value)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.ToString">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.ToString01">
+            <summary>Sets the stub of DbContext.ToString()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.UnitsGet">
+            <summary>Sets the stub of PGEntities.get_Units()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.UnitsSetDbSetOfUnit">
+            <summary>Sets the stub of PGEntities.set_Units(DbSet`1&lt;Unit&gt; value)</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubPGEntities.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.StubPGEntities.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>Sets the stub of DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.Leases">
+            <summary>Sets the stub of PGEntities.get_Leases()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.Units">
+            <summary>Sets the stub of PGEntities.get_Units()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.sysdiagrams">
+            <summary>Sets the stub of PGEntities.get_sysdiagrams()</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubPGEntities.tenants">
+            <summary>Sets the stub of PGEntities.get_tenants()</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.StubUnit">
+            <summary>Stub type of UnitTestWithNinject.Models.Unit</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubUnit.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.StubUnit.InitializeStub">
+            <summary>Initializes a new instance of type StubUnit</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubUnit.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubUnit.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.StubUnit.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Stubsysdiagram">
+            <summary>Stub type of UnitTestWithNinject.Models.sysdiagram</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Stubsysdiagram.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Stubsysdiagram.InitializeStub">
+            <summary>Initializes a new instance of type Stubsysdiagram</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubsysdiagram.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubsysdiagram.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubsysdiagram.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:UnitTestWithNinject.Models.Fakes.Stubtenant">
+            <summary>Stub type of UnitTestWithNinject.Models.tenant</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Stubtenant.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Stubtenant.AttachBackingFieldToLeases">
+            <summary>Attaches delegates to emulate Stubtenant.Leases as a property with a backing field.</summary>
+        </member>
+        <member name="M:UnitTestWithNinject.Models.Fakes.Stubtenant.InitializeStub">
+            <summary>Initializes a new instance of type Stubtenant</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.Stubtenant.LeasesGet">
+            <summary>Sets the stub of tenant.get_Leases()</summary>
+        </member>
+        <member name="F:UnitTestWithNinject.Models.Fakes.Stubtenant.LeasesSetICollectionOfLease">
+            <summary>Sets the stub of tenant.set_Leases(ICollection`1&lt;Lease&gt; value)</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubtenant.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubtenant.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubtenant.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="P:UnitTestWithNinject.Models.Fakes.Stubtenant.Leases">
+            <summary>Sets the stub of tenant.get_Leases()</summary>
+        </member>
+    </members>
+</doc>
